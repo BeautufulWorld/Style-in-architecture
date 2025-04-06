@@ -1,14 +1,5 @@
 # Style-in-architecture
-Style in architecture
-import os
-import cv2
-import cv3
-import cv4
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras import layers, models
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
+
 
 # Загрузка и предобработка изображений
 def load_images(image_folder, img_size=(128, 128)):
