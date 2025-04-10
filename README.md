@@ -1,6 +1,7 @@
 # Style-in-architecture
 
 # Загрузка и предобработка изображений
+head
 def load_images(image_folder, img_size=(128, 128)):
     images = []
     labels = []
