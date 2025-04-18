@@ -2,6 +2,7 @@
 # Загрузка и предобработка изображений
 head
 def load_images(image_folder, img_size=(128, 128)):
+
     images = []
     labels = []
     for style_folder in os.listdir(image_folder):
@@ -18,17 +19,13 @@ def load_images(image_folder, img_size=(128, 128)):
 # Загрузка данных
 image_folder = 'path_to_your_dataset'
 X, y = load_images(image_folder)
-
 # Нормализация изображений
 X = X / 255.0
-
 # Кодирование меток
 label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)
-
 # Разделение на обучающие и тестовые данные
 X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.2, random_state=42)
-
 # Построение модели нейронной сети
 model = models.Sequential([
     layers.InputLayer(input_shape=(128, 128, 3)),
