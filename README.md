@@ -14,7 +14,6 @@ def load_images(image_folder, img_size=(128, 128)):
                 images.append(img)
                 labels.append(style_folder)
     return np.array(images), np.array(labels)
-
 # Загрузка данных
 image_folder = 'path_to_your_dataset'
 X, y = load_images(image_folder)
