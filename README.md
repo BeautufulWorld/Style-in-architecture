@@ -3,7 +3,7 @@
 # Загрузка и предобработка изображений
 head
 def load_images(image_folder, img_size=(128, 128)):
-    images = []
+    images = []q
     labels = []
     for style_folder in os.listdir(image_folder):
         style_folder_path = os.path.join(image_folder, style_folder)
