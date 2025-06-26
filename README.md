@@ -11,7 +11,7 @@ def load_images(image_folder, img_size=(128, 128)):
             for img_name in os.listdir(style_folder_path):
                 img_path = os.path.join(style_folder_path, img_name)
                 img = cv2.imread(img_path)
-                img = cv2.resize(img, img_size)
+                img = cv2.resize(img, img_size)q
                 images.append(img)
                 labels.append(style_folder)
     return np.array(images), np.array(labels)
