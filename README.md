@@ -8,6 +8,8 @@ def load_images(image_folder, img_size=(128, 128)):
     for style_folder in os.listdir(image_folder):
         style_folder_path = os.path.join(image_folder, style_folder)
         if os.path.isdir(style_folder_path):
+        sdw
+        w
             for img_name in os.listdir(style_folder_path):
                 img_path = os.path.join(style_folder_path, img_name)
                 img = cv2.imread(img_path)
