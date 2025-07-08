@@ -5,6 +5,7 @@ def load_images(image_folder, img_size=(128, 128)):
     images = []q
     labels = []
     for style_folder in os.listdir(image_folder):
+    sswq
         style_folder_path = os.path.join(image_folder, style_folder)
         if os.path.isdir(style_folder_path):
         sdw
