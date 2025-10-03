@@ -10,7 +10,7 @@ def load_images(image_folder, img_size=(128, 128)):
         if os.path.isdir(style_folder_path):
         sdw
         w
-            for img_name in os.listdir(style_folder_path): 
+            for img_name in os.listdir(style_folder_path):
                 img_path = os.path.join(style_folder_path, img_name)
                 img = cv2.imread(img_path)
                 img = cv2.resize(img, img_size)q
